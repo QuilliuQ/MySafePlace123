@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:width="172dp"
+        android:height="40.5dp"
+        android:gravity="center"
+        android:bottom="1dp"
+        android:drawable="@drawable/grad_white">
+    </item>
+    <item android:width="170dp"
+        android:height="39dp"
+        android:gravity="center"
+        android:bottom="1dp"
+        android:drawable="@drawable/grad_bgw">
+    </item>
+</layer-list>

@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">My Safe Place</string>
+    <string name="my_safe_place">MY SAFE PLACE</string>
+    <string name="e_mail"><font size="12">e-mail</font></string>
+    <string name="password"><font size="12">пароль</font></string>
+    <string name="textview">TextView</string>
+    <string name="summer_colection">Новая весенняя коллекция</string>
+
+</resources>

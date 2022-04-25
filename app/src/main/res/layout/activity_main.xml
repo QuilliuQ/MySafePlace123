@@ -1,0 +1,685 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="62dp"
+            android:layout_height="match_parent"
+            android:contentDescription="TODO"
+            android:paddingLeft="30dp"
+            android:paddingTop="25dp"
+            app:srcCompat="@drawable/logomini" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="261dp"
+            android:layout_height="wrap_content"
+            android:paddingTop="25dp"
+            android:text="@string/my_safe_place"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="26dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:paddingTop="25dp"
+            app:srcCompat="@drawable/icon_like" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="26dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:paddingTop="25dp"
+            app:srcCompat="@drawable/icon_shop" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="410dp"
+        android:layout_height="627dp"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="1dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="72dp"
+                android:gravity="center"
+                android:paddingTop="25dp"
+                android:text="@string/summer_colection"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="260dp"
+                tools:ignore="SpeakableTextPresentCheck">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <ImageView
+                            android:id="@+id/imgBlock1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:paddingLeft="20dp"
+                            app:srcCompat="@drawable/img_up1"
+                            tools:layout_editor_absoluteX="17dp" />
+
+                        <ImageView
+                            android:id="@+id/like1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+
+                            android:paddingTop="10dp"
+                            android:paddingRight="60dp"
+
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:srcCompat="@drawable/icon_like"
+                            tools:layout_editor_absoluteY="0dp" />
+
+                        <TextView
+                            android:id="@+id/textblok1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginEnd="0dp"
+
+                            android:gravity="center"
+                            android:text="Базовый свитшот\n 2 000р"
+                            android:textColor="@color/black"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/imgBlock1" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <ImageView
+                            android:id="@+id/imgBlock2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:paddingLeft="37dp"
+                            app:srcCompat="@drawable/img_up4" />
+
+                        <ImageView
+                            android:id="@+id/like2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+
+                            android:paddingTop="10dp"
+                            android:paddingRight="60dp"
+
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:srcCompat="@drawable/icon_like"
+                            tools:layout_editor_absoluteY="0dp" />
+
+                        <TextView
+                            android:id="@+id/textblok2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginEnd="50dp"
+
+                            android:gravity="center"
+                            android:text="Худи \n5 000р"
+                            android:textColor="@color/black"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/imgBlock2" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <ImageView
+                            android:id="@+id/imgBlock3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:paddingLeft="37dp"
+                            app:srcCompat="@drawable/img_up2" />
+
+                        <ImageView
+                            android:id="@+id/like3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+
+                            android:paddingTop="10dp"
+                            android:paddingRight="60dp"
+
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:srcCompat="@drawable/icon_like"
+                            tools:layout_editor_absoluteY="0dp" />
+
+                        <TextView
+                            android:id="@+id/textblok3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginEnd="40dp"
+
+                            android:gravity="center"
+                            android:text="Костюм \n8 000р"
+                            android:textColor="@color/black"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/imgBlock3" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <ImageView
+                            android:id="@+id/imgBlock4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:paddingLeft="37dp"
+                            app:srcCompat="@drawable/img_up5" />
+
+                        <ImageView
+                            android:id="@+id/like4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+
+                            android:paddingTop="10dp"
+                            android:paddingRight="60dp"
+
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:srcCompat="@drawable/icon_like"
+                            tools:layout_editor_absoluteY="0dp" />
+
+                        <TextView
+                            android:id="@+id/textblok4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginEnd="40dp"
+
+                            android:gravity="center"
+                            android:text="Костюм \n9 000р"
+                            android:textColor="@color/black"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/imgBlock4" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <ImageView
+                            android:id="@+id/imgBlock5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:paddingLeft="37dp"
+                            android:paddingRight="19dp"
+                            app:srcCompat="@drawable/img_up6" />
+
+                        <ImageView
+                            android:id="@+id/like5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+
+                            android:paddingTop="10dp"
+                            android:paddingRight="60dp"
+
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:srcCompat="@drawable/icon_like"
+                            tools:layout_editor_absoluteY="0dp" />
+
+                        <TextView
+                            android:id="@+id/textblok5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginEnd="55dp"
+
+                            android:gravity="center"
+                            android:text="Куртка\n10 000р"
+                            android:textColor="@color/black"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/imgBlock5" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </LinearLayout>
+            </HorizontalScrollView>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/rectangle"
+                android:elevation="25dp"
+                android:orientation="vertical"
+                android:outlineProvider="paddedBounds">
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="30dp"
+                    android:text="Информация о доставке"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginRight="20dp"
+                    android:text="Время доставки рассчитывается на основе даты оплаты заказа, но фактическое время доставки может занять больше времени, чем ожидалось."
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/button2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="180dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/round_botton"
+                    android:text="Подробнее"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="match_parent"
+                android:layout_height="72dp"
+                android:gravity="center"
+                android:paddingTop="25dp"
+                android:text="Bold design ideas and the latest models"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+
+                android:text="Отрази свое внутреннее состояние \nс нашей подборкой одежды"
+                android:textColor="@color/black"
+                android:textSize="13sp" />
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/image12"
+                android:paddingTop="20dp"
+                />
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="match_parent"
+                android:layout_height="72dp"
+                android:gravity="center"
+                android:paddingTop="25dp"
+                android:text="Старые коллекции"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="260dp"
+                tools:ignore="SpeakableTextPresentCheck">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <ImageView
+                            android:id="@+id/imgBlock6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:paddingLeft="20dp"
+                            app:srcCompat="@drawable/img_down1"
+                            tools:layout_editor_absoluteX="17dp" />
+
+                        <ImageView
+                            android:id="@+id/like6"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+
+                            android:paddingTop="10dp"
+                            android:paddingRight="60dp"
+
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:srcCompat="@drawable/icon_like"
+                            tools:layout_editor_absoluteY="0dp" />
+
+                        <TextView
+                            android:id="@+id/textblok6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginEnd="0dp"
+
+                            android:gravity="center"
+                            android:text="Базовый свитшот\n \n2 000р"
+                            android:textColor="@color/black"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/imgBlock6" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <ImageView
+                            android:id="@+id/imgBlock7"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:paddingLeft="37dp"
+                            app:srcCompat="@drawable/img_down2" />
+
+                        <ImageView
+                            android:id="@+id/like7"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+
+                            android:paddingTop="10dp"
+                            android:paddingRight="60dp"
+
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:srcCompat="@drawable/icon_like"
+                            tools:layout_editor_absoluteY="0dp" />
+
+                        <TextView
+                            android:id="@+id/textblok7"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginEnd="50dp"
+
+                            android:gravity="center"
+                            android:text="Худи \n5 000р"
+                            android:textColor="@color/black"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/imgBlock7" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <ImageView
+                            android:id="@+id/imgBlock8"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:paddingLeft="37dp"
+                            app:srcCompat="@drawable/img_down3" />
+
+                        <ImageView
+                            android:id="@+id/like8"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+
+                            android:paddingTop="10dp"
+                            android:paddingRight="60dp"
+
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:srcCompat="@drawable/icon_like"
+                            tools:layout_editor_absoluteY="0dp" />
+
+                        <TextView
+                            android:id="@+id/textblok8"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginEnd="40dp"
+
+                            android:gravity="center"
+                            android:text="Костюм \n8 000р"
+                            android:textColor="@color/black"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/imgBlock8" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <ImageView
+                            android:id="@+id/imgBlock9"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:paddingLeft="37dp"
+                            app:srcCompat="@drawable/img_down4" />
+
+                        <ImageView
+                            android:id="@+id/like9"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+
+                            android:paddingTop="10dp"
+                            android:paddingRight="60dp"
+
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:srcCompat="@drawable/icon_like"
+                            tools:layout_editor_absoluteY="0dp" />
+
+                        <TextView
+                            android:id="@+id/textblok9"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginEnd="40dp"
+
+                            android:gravity="center"
+                            android:text="Костюм \n9 000р"
+                            android:textColor="@color/black"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/imgBlock9" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <ImageView
+                            android:id="@+id/imgBlock10"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:paddingLeft="37dp"
+                            android:paddingRight="19dp"
+                            app:srcCompat="@drawable/img_down6" />
+
+                        <ImageView
+                            android:id="@+id/like10"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+
+                            android:paddingTop="10dp"
+                            android:paddingRight="60dp"
+
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:srcCompat="@drawable/icon_like"
+                            tools:layout_editor_absoluteY="0dp" />
+
+                        <TextView
+                            android:id="@+id/textblok10"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginEnd="55dp"
+
+                            android:gravity="center"
+                            android:text="Куртка\n10 000р"
+                            android:textColor="@color/black"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/imgBlock10" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="80dp"
+                android:background="@drawable/rectangle"
+                android:elevation="25dp"
+                android:orientation="vertical"
+                android:outlineProvider="paddedBounds">
+
+                <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="30dp"
+                    android:text="Используйте код купона"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginRight="20dp"
+                    android:text="Промокод – это код, который покупатели могут ввести в специальное поле промокода на контрольной странице перед оплатой заказа, чтобы получить скидку."
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/button3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="180dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/round_botton"
+                    android:text="Подробнее"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView2">
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="135dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/icon_like"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"/>
+
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="107dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/icon_chel"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"/>
+
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="63dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/icon_shop"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"/>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
